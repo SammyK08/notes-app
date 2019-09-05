@@ -58,7 +58,29 @@ if(sortBy==='byEdited'){
           return 0
        }
     })
-}else{
+}else if(sortBy==='byCreated'){
+   return notes.sort(function(a,b){
+      if(a.createdAt>b.createdAt){
+         return -1
+      }else if(a.createdAt<b.createdAt){
+         return 1
+      }
+      else{
+         return 0
+      }
+   })
+}else if(sortBy==='alphabetical'){
+ return notes.sort(function(a,b){
+    if(a.title.toLowerCase()<b.title.toLowerCase()){
+       return -1
+    }else if(a.title.toLowerCase()>b.title.toLowerCase()){
+       return 1
+    }else{
+       return 0
+    }
+ })
+}
+else{
    return notes
 }
 
