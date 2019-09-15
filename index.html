@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-           
+        <title>Notes App</title>
+        <link href="/images/favicon.png" rel="icon">
+        <link href="/styles/style.css" rel="stylesheet">
     </head>
+
     <body>
-      <h1>Notes App</h1>
-      <h2>Take note and never forget</h2>
-      <input textype="text" id="search-text"  placeholder="filter Note">
-      <select id="filter-by">
-          <option value="byEdited">Sort by last edited</option>
-          <option value="byCreated">Sort by recently created</option>
-          <option value="alphabetical">Sort alphabetically</option>
-      </select>
-      <div id="notes"></div>
-    <button id="create-note">Create Note</button>
-    
-   
-    </body>
+      <header class="header">
+       <div class="container">
+          <h1 class="header__title">Notes App</h1>
+          <h2 class="header__subtitle">Take note and never forget</h2>
+       </div>
+      </header>
+      
+      <div class="actions">
+        <div class="actions__container">
+            <input type="text" id="search-text"  class="input" placeholder="filter Note">
+            <select id="filter-by" class="dropdown">
+                <option value="byEdited">Sort by last edited</option>
+                <option value="byCreated">Sort by recently created</option>
+                <option value="alphabetical">Sort alphabetically</option>
+            </select>
+        </div>
+      </div>
+
+     <div class="container">
+        <div id="notes"></div>
+        <button id="create-note" class="button">Create Note</button>
+      </div>
+      
+  </body>
+
     <Script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></Script>
-    <script src="UUIDV4.js"></script>
-    <script src="notes-function.js"></script>
-    <script src="notes-app.js">
-        </script>
+    <script src="/scripts/UUIDV4.js"></script>
+    <script src="/scripts/notes-function.js"></script>
+    <script src="/scripts/notes-app.js"></script>
 </html>
