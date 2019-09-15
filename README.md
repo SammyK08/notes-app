@@ -7,3 +7,5 @@ information and display back to user when needed. Explored the data transfer mec
 across the pages using the browser provided objects like 'location' and 'window' and its properties.
 This application also usess the third party library to generate the random number and 
 manipulate the date.
+
+Demo of app: https://easynoteapp.netlify.com
